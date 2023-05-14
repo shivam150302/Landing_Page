@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Bebas+Neue&family=Changa:wght@200&family=Cinzel:wght@600&family=Concert+One&family=Fira+Sans&family=Fredoka+One&family=Handlee&family=Ibarra+Real+Nova&family=Josefin+Sans&family=Lato:wght@300&family=Lobster&family=Mingzat&family=Montserrat:wght@300;400&family=Mukta&family=Nunito&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300;400&family=Oswald&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@400;800&family=Poppins:wght@200;300&family=Raleway:wght@400;500&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@300;400;700&family=Secular+One&family=Shadows+Into+Light&family=Source+Code+Pro:wght@300&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'cerco';
+    src: url("CercoDEMO-Medium.otf");
+}
+
+:root {
+    --yellow: #fba311;
+    --blue: #3e415c;
+}
+
+.container {
+    background-image: url("pngimage.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1.5rem;
+}
+
+.logo {
+    display: flex;
+    font-family: 'cerco', sans-serif;
+    color: var(--yellow);
+    font-size: 2rem;
+}
+
+span {
+    color: var(--blue);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--yellow);
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 1.9rem;
+    font-family: 'cerco', sans-serif;
+}
+
+.bar {
+    display: none;
+    position: absolute;
+    top: 1.4rem;
+    right: .9rem;
+    font-size: 22px;
+    color: var(--blue);
+}
+
+/* main__content */
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.info {
+    padding: 0 2rem;
+}
+
+.info h1 {
+    font-size: 4rem;
+    font-family: 'cerco', sans-serif;
+    color: var(--blue);
+}
+
+.info h2 {
+    font-size: 3rem;
+    font-family: 'cerco', sans-serif;
+    color: var(--blue);
+}
+
+.info p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--blue);
+    width: 50%;
+}
+
+.btn {
+    display: flex;
+}
+
+.btn button {
+    margin-top: 1.5rem;
+}
+
+@media (max-width:762px) {
+    .bar {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo {
+        align-items: flex-start;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul li {
+        padding: .3rem .75rem;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .info h1 {
+        font-size: 2.5rem;
+    }
+
+    .info h2 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        width: 90%;
+    }
+
+    .btn {
+        justify-content: center;
+    }
+}
+
+@media (max-width:840px) {
+    .main__content {
+        padding: 50px 0;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:840px) and (max-width:1300px) {
+    .main__content {
+        padding: 150px 0;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/921db93c72.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="container">
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                Shivam <span>Singh</span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><button>SIGN UP</button></li>
+                </ul>
+            </div>
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <!-- main content -->
+        <div class="main__content">
+            <div class="info">
+                <h1>E-Learning</h1>
+                <h2>Improve your skill</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis alias nesciunt maxime quaerat labore consequatur laboriosam necessitatibus enim vero.</p>
+                <div class="btn">
+                    <button>Get Started</button>
+                </div>
+            </div>
+            <div class="pic">
+                <img src="main1-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        const bars = document.getElementsByClassName('bar')[0]
+        const links = document.getElementsByClassName('links')[0]
+        bars.addEventListener('click', () => {
+            links.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
